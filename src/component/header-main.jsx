@@ -1,6 +1,16 @@
 import React from "react";
 import "../styles/header-main.scss";
-import { BittaHola, MainKonec, Mishka } from "../resource";
+import {
+  BittaHola,
+  Books,
+  Card11w,
+  Card22,
+  Deva1,
+  Devkas,
+  Devochka,
+  MainKonec,
+  Mishka,
+} from "../resource";
 
 const HeaderMain = () => {
   console.log(screen);
@@ -48,31 +58,51 @@ const HeaderMain = () => {
         <div className="boxes-kurs">
           <div className="pochemu">
             <p>
-              Вам кажется, что вы ничему не можете научить ребенка (режимные
-              моменты и говорить спасибо)
+              Вам кажется, что <span>вы ничему не можете научить ребенка</span>{" "}
+              (режимные моменты и говорить спасибо)
             </p>
-            <img src={BittaHola} alt="" />
+            <img src={Devkas} alt="" />
           </div>
           <div className="pochemu">
             <p>
-              Вам кажется, что вы ничему не можете научить ребенка (режимные
-              моменты и говорить спасибо)
+              Вам кажется, что полученные в институте знания{" "}
+              <span>не применимы к текущему поколению детей</span>
             </p>
-            <img src={BittaHola} alt="" />
+            <img src={Books} alt="" />
           </div>
           <div className="pochemu">
             <p>
-              Вам кажется, что вы ничему не можете научить ребенка (режимные
-              моменты и говорить спасибо)
+              Вы не знаете как педагогу работать с классом, в котором{" "}
+              <span>есть дети с особенностями развития</span>, но нет психолога,
+              который поможет выстроить маршрут коррекции
             </p>
-            <img src={BittaHola} alt="" />
+            <img src={Deva1} alt="" />
           </div>
           <div className="pochemu">
             <p>
-              Вам кажется, что вы ничему не можете научить ребенка (режимные
-              моменты и говорить спасибо)
+              Вы не знаете как помочь{" "}
+              <span>ребенку управлять своим вниманием</span>
             </p>
-            <img src={BittaHola} alt="" />
+            <img src={Devochka} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="pochemu_immenno_kurs">
+        <p>Почему именно курс по нейропсихологии поможет вам:</p>
+        <div className="boxes">
+          <div className="box">
+            <img src={Card11w} alt="" />
+            <p>Практико ориентированный курс от эксперта практика</p>
+          </div>
+          <div className="box">
+            <img src={Card22} alt="" />
+            <p>Методы и принципы работы в нейропсихологии научно обоснованы</p>
+          </div>
+          <div className="box">
+            <img src={Card11w} alt="" />
+            <p>
+              Инструменты нейропсихологического подхода понятны и действенны
+            </p>
           </div>
         </div>
       </div>
