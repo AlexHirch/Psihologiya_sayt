@@ -1,0 +1,76 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../resource/fonts/montserrat/Montserrat-Regular.ttf);
+}
+
+:root {
+  --width: 1vw;
+  --height: 1vh;
+}
+
+div.navbar {
+  display: flex;
+  width: 100%;
+  height: calc(var(--width) * 10);
+  background-color: #fbf8e1;
+  padding: 10px 50px;
+  justify-content: space-between;
+  font-family: Montserrat;
+  align-items: center;
+  .logo-text {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    .logo {
+      width: 20%;
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 65%;
+      padding: 0 10px;
+      font-size: calc(var(--width) * 1.2);
+      font-weight: 600;
+    }
+  }
+  .contacts {
+
+
+    display: grid;
+    align-items: center;
+    b {
+      font-weight: 900;
+      font-size: calc(var(--width) * 1.6);
+      text-decoration: underline;
+    }
+    p {
+      font-size: calc(var(--width) * 1.2);
+    }
+    a {
+      color: black;
+      font-size: calc(var(--width) * 1.2);
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  div.navbar {
+    padding: 10px;
+    .logo-text {
+      width: 70%;
+      .logo {
+        img {
+          width: 80%;
+        }
+      }
+      .text {
+        font-size: calc(var(--width) * 1.5);
+      }
+    }
+  }
+}
